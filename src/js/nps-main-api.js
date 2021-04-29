@@ -10,5 +10,21 @@ export default class NpsMainService {
       .catch(function (error) {
         return error.message;
       });
+  } 
+  static getAlert(parkCode) {
+    return fetch(`https://developer.nps.gov/api/v1/alerts?parkCode=${parkCode}&api_key=${process.env.NPS_API_KEY}`)
+      .then(function (response) {
+        if(!response.ok) {
+          throw Error(response.statusText);
+        }
+        return response.json();
+      })
+      .catch(function (error) {
+        return error.message;
+      });
   }
 }
+
+
+
+

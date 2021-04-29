@@ -2,17 +2,16 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Take A Hike</title>
-</head>
+  <meta charset="UTF-8" />
 
 <body>
   <div class="container">
-    <h1>Take A Hike</h1>
+
+    <h1>Take A Hike</h1><br>
 
     <form id="main-page">
+      <h4>Welcome to the unofficial webpage for the National Parks Service! Please select a state
+        and National Park, Trail, or Historic Monument to receive information for your area.</h4><br>
       <select name="state-select" id="state-select" class="form-control">
         <option hidden disabled selected>Please Select a State</option>
         <option value="AL">Alabama</option>
@@ -23,6 +22,7 @@
         <option value="CO">Colorado</option>
         <option value="CT">Connecticut</option>
         <option value="DE">Delaware</option>
+        <option value="blah">Duckburg</option>
         <option value="FL">Florida</option>
         <option value="GA">Georgia</option>
         <option value="HI">Hawaii</option>
@@ -62,14 +62,20 @@
         <option value="VT">Vermont</option>
         <option value="VA">Virginia</option>
         <option value="WA">Washington</option>
+        <option value="DC">Washington D.C.</option>
         <option value="WV">West Virginia</option>
         <option value="WI">Wisconsin</option>
         <option value="WY">Wyoming</option>
       </select>
-      <button type="submit" id="button" class="btn btn-primary btn-block mt-3">Submit</button>
+      <button type="submit" id="button" class="btn btn-primary btn-block mt-3 mb-3">
+        Submit
+      </button>
     </form>
+
+    <div class="park-list"></div>
+    <div class="parkInfoOutput"></div>
   </div>
-  <ol class="output"></ol>
+  <footer> <q><em>In every walk with nature one receives far more than he seeks. -John Muir</em></q></footer>
 </body>
 
 </html>

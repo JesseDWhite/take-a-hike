@@ -1,3 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+
+html {
+  background-image: url(./../../assets/images/Fern.jpeg);
+  background-size: auto;
+  background-position: center;
+  background-color:black;
+  position: relative;
+  height: 1000px;
+}
+
 body {
-    background-color: green;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.226);
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Ultra", serif;
+  margin: 15px;
+}
+
+q,
+p {
+  margin: 15px, 50px;
+}
+
+footer {
+  text-align: center;
+  height: vh;
+}
+.parkInfoOutput {
+  display: none;
+}
+
+.park-names {
+  background-color: white;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.park-names:hover {
+  background-color: rgb(87, 171, 255);
+  color: white;
+}
+
+#park-image-header {
+  max-height: 500px;
+  min-height: 500px;
 }
